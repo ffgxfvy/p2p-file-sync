@@ -1,0 +1,38 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.env
+
+# ---- 测试缓存 ----
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ---- 运行时数据 ----
+shared_files/
+shared_folder/
+received/
+*.part
+*.log
+
+# ---- 文档（含小组其他成员内容）----
+*.docx
+*.doc
+*.pptx
+*.pdf
+
+# ---- 压缩包 ----
+*.zip
+*.rar
+*.7z
+
+# ---- 系统 ----
+.DS_Store
+Thumbs.db
+desktop.ini

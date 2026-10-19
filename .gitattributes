@@ -1,0 +1,4 @@
+# 统一换行符
+* text=auto eol=lf
+*.png binary
+*.zip binary

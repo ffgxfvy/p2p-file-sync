@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "p2psync"
+version = "2.0.0"
+description = "LAN peer-to-peer file sync: UDP broadcast discovery + TCP transfer with SHA-256 verification and resume"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+keywords = ["p2p", "file-sync", "socket", "udp", "tcp", "lan"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=6.0"]
+
+[project.scripts]
+p2psync = "p2psync.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.setuptools]
+packages = ["p2psync"]
